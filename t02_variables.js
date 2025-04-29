@@ -6,7 +6,7 @@
  ****************************/
  console.log("Running t02_variables.js");
  //Variables
- let userAge = 15
+ let userAge = 24
   let userPocketMoney = 72
   let currentYear = 2025
  
