@@ -5,8 +5,6 @@
  Learing how to do variables
  ****************************/
  console.log("Running t02_variables.js");
- console.log("Hi Jerimah the second");
- console.log("");
  //Variables
  let userAge = 15
   let userPocketMoney = 72
