@@ -8,14 +8,16 @@
  console.log("Hi Jerimah the second");
  console.log("");
  //Variables
- 
- 
- /****************************
-  let userAge = 15
+ let userAge = 15
   let userPocketMoney = 72
   let currentYear = 2025
-  ****************************/
  
+ /****************************
+  Main code
+  ****************************/
+  console.log("Hi Jerimah the second");
+  console.log("As of", currentYear, "you are", userAge, "years old");
+  console.log("You have", userPocketMoney, "dollars");
  
  
  
