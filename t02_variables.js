@@ -7,7 +7,7 @@
  console.log("Running t02_variables.js");
 
  //Variables
- 
+ console.log("Hi ");
  
  /****************************
   Main code
