@@ -4,7 +4,7 @@
  29-04-2025
  Learing how to do variables
  ****************************/
- console.log("Hello t01_introduction.js");
+ console.log("Running t02_variables.js");
 
  //Variables
  
