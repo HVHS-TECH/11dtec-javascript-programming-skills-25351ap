@@ -5,12 +5,15 @@
  Learing how to do variables
  ****************************/
  console.log("Running t02_variables.js");
-
+ console.log("Hi Jerimah the second");
+ console.log("");
  //Variables
- console.log("Hi ");
+ 
  
  /****************************
-  Main code
+  let userAge = 15
+  let userPocketMoney = 72
+  let currentYear = 2025
   ****************************/
  
  
