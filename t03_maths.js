@@ -18,7 +18,7 @@
   console.log("You were born in", currentYear - userAge);
   console.log("In 10 years you will be", userAge + 10, "years old");
   console.log("You have", userPocketMoney, "dollars");
-  console.log("");
+  console.log("Half of your money is", userPocketMoney / 2);
  
  
  
