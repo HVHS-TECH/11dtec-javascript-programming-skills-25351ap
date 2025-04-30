@@ -15,6 +15,7 @@
   ****************************/
   console.log("Hi Jerimah the second");
   console.log("As of", currentYear, "you are", userAge, "years old");
+  console.log("You were born in", currentYear - userAge);
   console.log("You have", userPocketMoney, "dollars");
  
  
