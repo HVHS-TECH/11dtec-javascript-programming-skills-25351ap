@@ -1,13 +1,13 @@
-konsole.log["Task 4 - Debugging"]
+console.log("Running t04_Debugging.js")
 
 // Set up the size of the page.
 var length = 8;
 var width = 10
 
-// calculate the area
+// calculate the perimeter
 var perimeter = length + width;
 
-// calculate the perimeter
+// calculate the area
 var area = length * width; 
 
 // Display the results
