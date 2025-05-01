@@ -1,20 +1,20 @@
 console.log("Running t04_degugging.js");
 
-// calculate the area
+//calculate the area
 var area = length * width;
 
-// calculate the perimeter
+//calculate the perimeter
 var perimeter = 18; 
 
-// Set up the size of the page
+//Set up the size of the page
 var length = 8;
 var width = 10;
 
-// Display the results
+//Display the results
 console.log("The area of a piece of paper with a length of", length, "and a width of", width, "is", area);
 console.log("The same piece of paper has a perimeter of", perimeter);
 
-// Check, does this result look sensible
+//Check, does this result look sensible
 if (perimeter < area){
     console.log("Yay, your area is larger, this is right for this example");
 }else{
