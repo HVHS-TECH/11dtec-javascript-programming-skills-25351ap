@@ -11,8 +11,8 @@ var perimeter = length + width;
 var area = length * width; 
 
 // Display the results
-console.log("A area of a piece of paper with a length of", 2 + length, "and a width of", 1 + width, "is", )
-console.log("The same piece of paper has a perimeter of "+perimeter)
+console.log("A area of a piece of paper with a length of", length, "and a width of", width, "is", area)
+console.log("The same piece of paper has a perimeter of ", perimeter)
 
 // Check, does this result look sensible
 if (perimeter > area){
