@@ -9,13 +9,15 @@
  let userAge = 24
   let userPocketMoney = 72
   let currentYear = 2025
- 
+  console.log(typeof(userAge));
+
  /****************************
   Main code
   ****************************/
   console.log("Hi Jerimah the second");
   console.log("As of", currentYear, "you are", userAge, "years old");
   console.log("You were born in", currentYear - userAge);
+  console.log(typeof(userAge));
   console.log("In 10 years you will be", userAge + 10, "years old");
   console.log("You have", userPocketMoney, "dollars");
   console.log("Half of your money is", userPocketMoney / 2);
