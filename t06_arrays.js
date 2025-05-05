@@ -24,7 +24,7 @@
   console.log("Half of your money is", userPocketMoney / 2, "dollars");
   alert("Welcome user to my first Javascript program!");
   alert("Hi Bob \nAs of 2025 you are 57 years old \nYou were born in 1968 \nIn 10 years you will be 67 \nYou have 30 dollars \nHalf of your money is 15");
-  alert("Hi"+classArray[choice]+"bye");
+  alert(classArray[choice]);
   /****************************
   Functions
   ****************************/
