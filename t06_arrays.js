@@ -10,6 +10,8 @@
  let userAge = prompt ("How old are you?");
   let userPocketMoney = prompt("How much pocket money do you have?");
   let currentYear = 2025
+  let classArray = ["You loath chocolate", "Chocolate is meh", "Chocoloate is pretty good", "Chocolate is the best thing EVER!!!!"];
+  let choice = prompt ("On a scale of 0-3 how much do you like chocolate?");
 
  /****************************
   Main code
@@ -22,6 +24,7 @@
   console.log("Half of your money is", userPocketMoney / 2, "dollars");
   alert("Welcome user to my first Javascript program!");
   alert("Hi Bob \nAs of 2025 you are 57 years old \nYou were born in 1968 \nIn 10 years you will be 67 \nYou have 30 dollars \nHalf of your money is 15");
+  alert();
   /****************************
   Functions
   ****************************/
