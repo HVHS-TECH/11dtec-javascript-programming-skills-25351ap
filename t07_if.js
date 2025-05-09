@@ -8,7 +8,7 @@
  //Variables
  let username = prompt ("What is your name?", "Enter your name");
  let userAge = prompt ("How old are you?", 0);
-  let userPocketMoney = prompt("How much pocket money do you have?", 0);
+  let userPocketMoney = prompt ("How much pocket money do you have?", 0);
   let currentYear = 2025
   let classArray = ["You loath chocolate", "Chocolate is meh", "Chocoloate is pretty good", "Chocolate is the best thing EVER!!!!"];
   let choice = prompt ("On a scale of 0-3 how much do you like chocolate?", 0);

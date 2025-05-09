@@ -13,7 +13,7 @@ console.log("Running t08_for_loop.js");
  Main code
  ****************************/
 for (count = 0; count < 6; count++) {
-    
+    prompt ();
 }
 
 
