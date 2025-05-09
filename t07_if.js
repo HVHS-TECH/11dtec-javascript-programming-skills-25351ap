@@ -25,6 +25,9 @@
   alert("Welcome user to my first Javascript program!");
   alert("Hi " + username + " \nAs of " + currentYear + " you are " + userAge + " years old \nYou were born in " + (currentYear - userAge) + " \nIn 10 years you will be " + (Number(userAge) + 10) + " years old \nYou have " + userPocketMoney + " dollars \nHalf of your money is " + userPocketMoney / 2);
   alert(classArray[choice]);
+  if (userPocketMoney > 4){
+    alert("Hi " + username + " \nI predict you were born in " + (currentYear - userAge) + " \nYour pocket money is " + userPocketMoney + " dollars \nYou CAN afford a chocolate bar!");
+  }
   /****************************
   Functions
   ****************************/
