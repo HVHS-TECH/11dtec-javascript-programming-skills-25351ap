@@ -27,6 +27,8 @@
   alert(classArray[choice]);
   if (userPocketMoney > 4){
     alert("Hi " + username + " \nI predict you were born in " + (currentYear - userAge) + " \nYour pocket money is " + userPocketMoney + " dollars \nYou CAN afford a chocolate bar!");
+  } else {
+    alert("Hi " + username + " \nI predict you were born in " + (currentYear - userAge) + " \nYour pocket money is " + userPocketMoney + " dollars \nSorry you CAN'T afford a chocolate bar!");
   }
   /****************************
   Functions
