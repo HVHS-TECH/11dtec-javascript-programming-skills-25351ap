@@ -15,6 +15,7 @@ console.log("Running t08_for_loop.js");
 console.log("Starting loop")
 for (count = 0; count < 6; count ++) {
     let randomnum = prompt ("Type a random number", 0);
+    console.log("current count: " + randomnum);
 }
 console.log("Loop stopped!")
 
