@@ -12,10 +12,11 @@ console.log("Running t08_for_loop.js");
 /****************************
  Main code
  ****************************/
-for (count = 5; count < 6; count ++) {
-    
+console.log("Starting loop")
+for (count = 0; count < 10; count ++) {
+    console.log("current count: " + count);
 }
-
+console.log("Loop stopped!")
 
 
  /****************************
