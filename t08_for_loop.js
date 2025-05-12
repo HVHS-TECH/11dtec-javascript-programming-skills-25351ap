@@ -13,7 +13,7 @@ console.log("Running t08_for_loop.js");
  Main code
  ****************************/
 console.log("Starting loop")
-for (count = 0; count < 6; count ++) {
+for (count = 0; count < 5; count ++) {
     let randomnum = prompt ("Type a random number", 0);
     console.log(+ randomnum);
 }
