@@ -7,7 +7,7 @@
 console.log("Running t08_for_loop.js");
 
 //Variables
-
+let randomnum = 0
 
 /****************************
  Main code
