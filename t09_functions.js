@@ -25,5 +25,6 @@ console.log("Your random number is " + randomnum)
  Functions
  ****************************/
 function askUserName() {
+    UserName = prompt("What is your name?");
     
 }
