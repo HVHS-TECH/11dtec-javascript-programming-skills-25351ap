@@ -14,7 +14,8 @@ let randomnum = 0
  ****************************/
 console.log("Starting loop")
 for (count = 0; count < 5; count ++) {
-    let randomnum = prompt ("Type a random number", 0);
+    let currentnum = prompt ("Type a random number", 0);
+    
     console.log(Number( + randomnum));
 }
 console.log("Loop stopped!")
