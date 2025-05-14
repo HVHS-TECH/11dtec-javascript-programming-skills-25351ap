@@ -26,5 +26,17 @@ console.log("Your random number is " + randomnum)
  ****************************/
 function askUserName() {
     UserName = prompt("What is your name?");
-    
+    alert("Welcome to my program " + UserName + "!");
+}
+function askUserAge() {
+    UserAge = prompt("How old are you?");
+    alert("You are " + UserAge + " years old.");
+}
+function askUserMoney() {
+    UserPocketMoney = prompt("How much pocket money do you have?");
+    if (userPocketMoney > 4){
+    alert("You have " + UserPocketMoney + " dollars. That is enough to purchase a 4 dollar chocolate bar. YAY!");
+  } else {
+    alert("You have " + UserPocketMoney + " dollars. That is not enough to purchase a 4 dollar chocolate bar. :(");
+  }
 }
