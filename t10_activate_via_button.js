@@ -8,6 +8,9 @@ console.log("Running t10_activate_via_button.js")
 
 //Variables
 let randomnum = 0;
+let UserName;
+let UserAge;
+let UserPocketMoney;
 
 /****************************
  Main code
@@ -19,6 +22,11 @@ for (count = 0; count < 5; count ++) {
 }
 console.log("Loop stopped!")
 console.log("Your random number is " + randomnum)
+function start() {
+    UserName = askUserName();
+    UserAge = askUserAge();
+    UserPocketMoney = askUserMoney();
+}
 alert(askUserName());
 alert(askUserAge());
 alert(askUserMoney());
