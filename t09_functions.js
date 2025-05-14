@@ -19,9 +19,9 @@ for (count = 0; count < 5; count ++) {
 }
 console.log("Loop stopped!")
 console.log("Your random number is " + randomnum)
-alert(askUserName());
-alert(askUserAge());
-alert(askUserMoney());
+alert(askUserName);
+alert(askUserAge);
+alert(askUserMoney);
 
  /****************************
  Functions
