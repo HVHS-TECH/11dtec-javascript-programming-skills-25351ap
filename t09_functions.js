@@ -36,7 +36,7 @@ function askUserAge() {
 }
 function askUserMoney() {
     UserPocketMoney = prompt("How much pocket money do you have?");
-    if (userPocketMoney > 4){
+    if (UserPocketMoney > 4){
     alert("You have " + UserPocketMoney + " dollars. That is enough to purchase a 4 dollar chocolate bar. YAY!");
   } else {
     alert("You have " + UserPocketMoney + " dollars. That is not enough to purchase a 4 dollar chocolate bar. :(");
