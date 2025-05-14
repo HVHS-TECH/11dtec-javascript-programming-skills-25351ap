@@ -4,7 +4,7 @@
  14-05-2025
  Learing how to use functions in javascript
  ****************************/
-console.log("Running t08_for_loop.js")
+console.log("Running t09_functions.js")
 
 //Variables
 let randomnum = 0;
@@ -19,7 +19,9 @@ for (count = 0; count < 5; count ++) {
 }
 console.log("Loop stopped!")
 console.log("Your random number is " + randomnum)
-
+alert(askUserAge());
+alert(askUserAge());
+alert(askUserMoney());
 
  /****************************
  Functions
