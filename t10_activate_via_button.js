@@ -27,9 +27,7 @@ function start() {
     UserAge = askUserAge();
     UserPocketMoney = askUserMoney();
 }
-alert(askUserName());
-alert(askUserAge());
-alert(askUserMoney());
+
 
  /****************************
  Functions
