@@ -1,16 +1,21 @@
-var myVar = 0;
-console.log("Start: "+myVar);
+/****************************
+ Task 12
+ Alice
+ 15-05-2025
+ Learing how to use a while loop to repeat a section of code
+ ****************************/
+console.log("Running t12_while_loop.js");
 
-functionOne();
-function functionOne() {
-  myVar = 1;
-  console.log("functionOne: "+myVar);
-}
+//Variables
 
-functionTwo();
-function functionTwo() {
-  var myVar = 2;
-  console.log("functionTwo: "+myVar);
-}
 
-console.log("end: "+myVar);
+/****************************
+ Main code
+ ****************************/
+
+
+
+
+ /****************************
+ Functions
+ ****************************/
