@@ -14,7 +14,7 @@ var loop = prompt("Would you like to continue the loop? \nTo continue enter y.")
  ****************************/
 while (Loop = "y") {
     alert("Loop will repeat again.")
-    loop = prompt("Would you like to continue the loop?", "\nTo say yes enter y.");
+    loop = prompt("Would you like to continue the loop? \nTo continue enter y.");
 }
 
 alert("End of loop.")
