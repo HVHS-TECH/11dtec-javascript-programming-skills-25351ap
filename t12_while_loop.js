@@ -12,7 +12,7 @@ var loop = prompt("Would you like to continue the loop? \nTo continue enter y.")
 /****************************
  Main code
  ****************************/
-while (Loop = "y") {
+while (loop = "y") {
     alert("Loop will repeat again.")
     loop = prompt("Would you like to continue the loop? \nTo continue enter y.");
 }
