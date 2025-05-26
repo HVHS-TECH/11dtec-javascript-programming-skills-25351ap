@@ -87,6 +87,16 @@ function askUserMoney() {
         }
     }
     if (UserPocketMoney == 1) {
-        alert
+        alert("Congrats! \nYou have enough pocket money to buy a $1 mars bar.");
+    }
+    else {
+        if (UserPocketMoney == 2) {
+        alert("Congrats! \nYou have enough pocket money to buy a $2 moro bar.");
+    }
+    else {
+        if (UserPocketMoney == 3) {
+        alert("Congrats! \nYou have enough pocket money to buy a $3 King sized chrunchy.");
+    }
+    }
     }
 }
