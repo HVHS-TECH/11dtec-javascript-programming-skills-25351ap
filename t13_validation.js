@@ -72,9 +72,18 @@ function askUserAge() {
 }
 function askUserMoney() {
     UserPocketMoney = prompt("How much pocket money do you have?");
-    if (UserPocketMoney > 4){
-    alert("You have " + UserPocketMoney + " dollars. That is enough to purchase a 4 dollar chocolate bar. YAY!");
-  } else {
-    alert("You have " + UserPocketMoney + " dollars. That is not enough to purchase a 4 dollar chocolate bar. :(");
-  }
+    while (UserPocketMoneyInvalid) {
+        UserPocketMoney = prompt("Please enter your age.");
+        if (UserPocketMoney == null) {
+            break;
+        }
+        else {
+            if (UserPocketMoney == "" || UserPocketMoney == " " || (isNaN(UserPocketMoney)) || UserPocketMoney <= 1 || UserPocketMoney >= 5) {
+                UserPocketMoney = prompt("Error! \nInvalid user input. \nPlease enter a valid user pocket money between 1 and 5.");
+            }
+            else {
+                UserPocketMoneyInvalid = false;
+            }
+        }
+    }
 }
