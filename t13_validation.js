@@ -42,7 +42,12 @@ function askUserName() {
             break;
         }
         else {
-            if (UserName == "" || UserName == " " || (!isNaN(UserName)))
+            if (UserName == "" || UserName == " " || (!isNaN(UserName))) {
+                UserName = prompt("Error! \nInvalid user input. \nPlease enter a valid user name.");
+            }
+            else {
+                UserNameInvalid = false;
+            }
         }
     }
     alert("Welcome to my program " + UserName + "!");
