@@ -19,6 +19,13 @@ while (loop == "y") {
 
 alert("End of loop.")
 
+while (loop == "y") {
+    alert("Loop will repeat again.")
+    loop = prompt("Would you like to continue the loop? \nTo continue enter y.");
+}
+
+alert("End of loop.")
+
 
  /****************************
  Functions
