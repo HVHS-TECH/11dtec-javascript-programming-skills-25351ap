@@ -36,7 +36,10 @@ function start() {
  Functions
  ****************************/
 function askUserName() {
-    UserName = prompt("What is your name?");
+    while (UserNameInvalid) {
+        UserName = prompt("Please enter your name.");
+        
+    }
     alert("Welcome to my program " + UserName + "!");
 }
 function askUserAge() {
