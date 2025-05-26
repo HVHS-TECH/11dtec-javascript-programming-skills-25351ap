@@ -54,6 +54,20 @@ function askUserName() {
 }
 function askUserAge() {
     UserAge = prompt("How old are you?");
+    while (UserAgeInvalid) {
+        UserAge = prompt("Please enter your age.");
+        if (UserAge == null) {
+            break;
+        }
+        else {
+            if (UserAge == "" || UserAge == " " || (isNaN(UserAge)) || UserAge <= 0 || UserAge >= 130) {
+                UserAge = prompt("Error! \nInvalid user input. \nPlease enter a valid user age between 0 and 130.");
+            }
+            else {
+                UserAgeInvalid = false;
+            }
+        }
+    }
     alert("You are " + UserAge + " years old.");
 }
 function askUserMoney() {
