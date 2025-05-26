@@ -73,7 +73,7 @@ function askUserAge() {
 function askUserMoney() {
     UserPocketMoney = prompt("How much pocket money do you have?");
     while (UserPocketMoneyInvalid) {
-        UserPocketMoney = prompt("Please enter your age.");
+         UserPocketMoney = prompt("How much pocket money do you have?");
         if (UserPocketMoney == null) {
             break;
         }
