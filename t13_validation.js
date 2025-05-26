@@ -50,7 +50,7 @@ function askUserName() {
             }
         }
     }
-    alert("Welcome to my program " + UserName + "!");
+    alert("Hello " + UserName + ".");
 }
 function askUserAge() {
     UserAge = prompt("How old are you?");
