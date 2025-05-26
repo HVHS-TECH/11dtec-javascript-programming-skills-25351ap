@@ -19,7 +19,7 @@ while (loop == "y") {
 
 alert("End of loop.")
 
-while (loop == "y") {
+while (confirm("Press a button!") == true) {
     alert("Loop will repeat again.")
     loop = prompt("Would you like to continue the loop? \nTo continue enter y.");
 }
