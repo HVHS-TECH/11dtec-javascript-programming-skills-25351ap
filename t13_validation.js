@@ -86,4 +86,7 @@ function askUserMoney() {
             }
         }
     }
+    if (UserPocketMoney == 1) {
+        alert
+    }
 }
