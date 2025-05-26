@@ -38,7 +38,12 @@ function start() {
 function askUserName() {
     while (UserNameInvalid) {
         UserName = prompt("Please enter your name.");
-        
+        if (UserName == null) {
+            break;
+        }
+        else {
+            if (UserName == "" || UserName == " " || (!isNaN(UserName)))
+        }
     }
     alert("Welcome to my program " + UserName + "!");
 }
