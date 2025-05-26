@@ -11,6 +11,9 @@ let randomnum = 0;
 let UserName;
 let UserAge;
 let UserPocketMoney;
+let UserNameInvalid = true;
+let UserAgeInvalid = true;
+let UserPocketMoneyInvalid = true;
 
 /****************************
  Main code
