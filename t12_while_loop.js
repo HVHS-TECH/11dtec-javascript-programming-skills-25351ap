@@ -19,7 +19,7 @@ while (loop == "y") {
 
 alert("End of loop.")
 
-while (confirm("Press a button!") == true) {
+while (confirm("Would you like to continue the loop?") == true) {
     alert("Loop will repeat again.")
 }
 
