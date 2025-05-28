@@ -36,8 +36,8 @@ function start() {
  Functions
  ****************************/
 function askUserName() {
+    UserName = prompt("Please enter your name.");
     while (UserNameInvalid) {
-        UserName = prompt("Please enter your name.");
         if (UserName == null) {
             break;
         }
@@ -53,9 +53,8 @@ function askUserName() {
     alert("Hello " + UserName + ".");
 }
 function askUserAge() {
-    UserAge = prompt("How old are you?");
+    UserAge = prompt("Please enter your age.");
     while (UserAgeInvalid) {
-        UserAge = prompt("Please enter your age.");
         if (UserAge == null) {
             break;
         }
@@ -73,12 +72,11 @@ function askUserAge() {
 function askUserMoney() {
     UserPocketMoney = prompt("How much pocket money do you have?");
     while (UserPocketMoneyInvalid) {
-         UserPocketMoney = prompt("How much pocket money do you have?");
         if (UserPocketMoney == null) {
             break;
         }
         else {
-            if (UserPocketMoney == "" || UserPocketMoney == " " || (isNaN(UserPocketMoney)) || UserPocketMoney <= 1 || UserPocketMoney >= 5) {
+            if (UserPocketMoney == "" || UserPocketMoney == " " || (isNaN(UserPocketMoney)) || UserPocketMoney <= 0 || UserPocketMoney >= 6) {
                 UserPocketMoney = prompt("Error! \nInvalid user input. \nPlease enter a valid user pocket money between 1 and 5.");
             }
             else {
@@ -87,23 +85,23 @@ function askUserMoney() {
         }
     }
     if (UserPocketMoney == 1) {
-        alert("Congrats! \nYou have enough pocket money to buy a $1 mars bar.");
+        alert("Congratulations! \nYou have enough pocket money to buy a $1 mars bar.");
     }
     else {
         if (UserPocketMoney == 2) {
-        alert("Congrats! \nYou have enough pocket money to buy a $2 moro bar.");
+        alert("Congratulations! \nYou have enough pocket money to buy a $2 moro bar.");
     }
     else {
         if (UserPocketMoney == 3) {
-        alert("Congrats! \nYou have enough pocket money to buy a $3 King sized chrunchy.");
+        alert("Congratulations! \nYou have enough pocket money to buy a $3 King sized chrunchy.");
     }
     else {
         if (UserPocketMoney == 4) {
-        alert("Congrats! \nYou have enough pocket money to buy a $4 Dairy milk block.");
+        alert("Congratulations! \nYou have enough pocket money to buy a $4 Dairy milk block.");
     }
     else {
         if (UserPocketMoney == 5) {
-        alert("Congrats! \nYou have enough pocket money to buy a $5 Lindt block.");
+        alert("Congratulations! \nYou have enough pocket money to buy a $5 Lindt block.");
     }
     }
     }
