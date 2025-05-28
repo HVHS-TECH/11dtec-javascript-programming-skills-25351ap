@@ -16,6 +16,8 @@ let UserAgeInvalid = true;
 let UserPocketMoneyInvalid = true;
 const MINIMUM_MONEY = 1;
 const MAXIMUM_MONEY = 5;
+const MINIMUM_AGE = 0;
+const MAXIMUM_AGE = 130;
 
 /****************************
  Main code
@@ -61,7 +63,7 @@ function askUserAge() {
             break;
         }
         else {
-            if (UserAge == "" || UserAge == " " || (isNaN(UserAge)) || UserAge <= 0 || UserAge >= 130) {
+            if (UserAge == "" || UserAge == " " || (isNaN(UserAge)) || UserAge <= MINIMUM_AGE || UserAge >= MAXIMUM_AGE) {
                 UserAge = prompt("Error! \nInvalid user input. \nPlease enter a valid user age between 0 and 130.");
             }
             else {
@@ -78,7 +80,7 @@ function askUserMoney() {
             break;
         }
         else {
-            if (UserPocketMoney == "" || UserPocketMoney == " " || (isNaN(UserPocketMoney)) || UserPocketMoney <= 0 || UserPocketMoney >= 6) {
+            if (UserPocketMoney == "" || UserPocketMoney == " " || (isNaN(UserPocketMoney)) || UserPocketMoney <= MINIMUM_MONEY || UserPocketMoney >= MAXIMUM_MONEY) {
                 UserPocketMoney = prompt("Error! \nInvalid user input. \nPlease enter a valid user pocket money between 1 and 5.");
             }
             else {
@@ -86,30 +88,20 @@ function askUserMoney() {
             }
         }
     }
-    if (UserPocketMoney == 1){
-        //Do a thing
-    }
-    else if (UserPocketMoney == 2){
-        //Do a different thing
-    }
 
     if (UserPocketMoney == 1) {
         alert("Congratulations! \nYou have enough pocket money to buy a $1 mars bar.");
     }
     else if (UserPocketMoney == 2) {
-            alert("Congratulations! \nYou have enough pocket money to buy a $2 moro bar.");
-        }
-        else if (UserPocketMoney == 3) {
-                alert("Congratulations! \nYou have enough pocket money to buy a $3 King sized chrunchy.");
-            }
-            else if (UserPocketMoney == 4) {
-                    alert("Congratulations! \nYou have enough pocket money to buy a $4 Dairy milk block.");
-                }
-                else if (UserPocketMoney == 5) {
-                        alert("Congratulations! \nYou have enough pocket money to buy a $5 Lindt block.");
-                    }
-                }
-            }
-        }
+        alert("Congratulations! \nYou have enough pocket money to buy a $2 moro bar.");
+    }
+    else if (UserPocketMoney == 3) {
+        alert("Congratulations! \nYou have enough pocket money to buy a $3 King sized chrunchy.");
+    }
+    else if (UserPocketMoney == 4) {
+        alert("Congratulations! \nYou have enough pocket money to buy a $4 Dairy milk block.");
+    }
+    else if (UserPocketMoney == 5) {
+        alert("Congratulations! \nYou have enough pocket money to buy a $5 Lindt block.");
     }
 }
