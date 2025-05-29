@@ -84,27 +84,19 @@ function askUserMoney() {
             }
         }
     }
-    if (UserPocketMoney == 1) {
+  if (UserPocketMoney == 1) {
         alert("Congratulations! \nYou have enough pocket money to buy a $1 mars bar.");
     }
-    else {
-        if (UserPocketMoney == 2) {
+    else if (UserPocketMoney == 2) {
         alert("Congratulations! \nYou have enough pocket money to buy a $2 moro bar.");
     }
-    else {
-        if (UserPocketMoney == 3) {
+    else if (UserPocketMoney == 3) {
         alert("Congratulations! \nYou have enough pocket money to buy a $3 King sized chrunchy.");
     }
-    else {
-        if (UserPocketMoney == 4) {
+    else if (UserPocketMoney == 4) {
         alert("Congratulations! \nYou have enough pocket money to buy a $4 Dairy milk block.");
     }
-    else {
-        if (UserPocketMoney == 5) {
+    else if (UserPocketMoney == 5) {
         alert("Congratulations! \nYou have enough pocket money to buy a $5 Lindt block.");
-    }
-    }
-    }
-    }
     }
 }
