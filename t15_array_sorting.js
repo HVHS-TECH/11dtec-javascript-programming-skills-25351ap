@@ -18,10 +18,10 @@ const MINIMUM_MONEY = 1;
 const MAXIMUM_MONEY = 5;
 const MINIMUM_AGE = 0;
 const MAXIMUM_AGE = 130;
+const MAXIMUM_POCKET_MONEY = 10;
 let chocolateArray = ["Mars bar", "Moro bar", "King Size Crunchy", "Dairy Milk Block", "Lindt Block"];
 let chocolatePriceArray = ["$2", "$2.50", "$3", "$6", "$7"]
 let message = ("The different kinds of chocolate bars available are:");
-const MAXIMUM_POCKET_MONEY = 10;
 let messageTwo = ("Your current pocket money amount is " + UserPocketMoney);
 
 /****************************
