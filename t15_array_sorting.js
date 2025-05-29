@@ -41,7 +41,11 @@ for (i = 1; i < chocolateArray.length; i++) {
 }
 alert(message);
 alert(askUserPocketMoney())
-
+for (i = 0; i < chocolatePriceArray.length; i++) {
+    if (messageTwo == chocolatePriceArray[i]) {
+        alert
+    }
+}
 for (i = 1; i < chocolateArray.length; i++) {
     messageTwo = messageTwo + "\nThis means the most expensive chocolate bar you can afford is " ;
 }
