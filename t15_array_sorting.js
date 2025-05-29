@@ -43,7 +43,7 @@ alert(message);
 alert(askUserPocketMoney())
 for (i = 0; i < chocolatePriceArray.length; i++) {
     if (messageTwo == chocolatePriceArray[i]) {
-        alert
+        alert()
     }
 }
 for (i = 1; i < chocolateArray.length; i++) {
