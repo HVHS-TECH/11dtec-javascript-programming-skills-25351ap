@@ -18,6 +18,8 @@ const MINIMUM_MONEY = 1;
 const MAXIMUM_MONEY = 5;
 const MINIMUM_AGE = 0;
 const MAXIMUM_AGE = 130;
+let chocolateArray = ["Mars bar", "Moro bar", "King Size Crunchy", "Dairy Milk Block", "Lindt Block"];
+let chocolatePriceArray = ["$2", "$2.50", "$3", "$6", "$7"]
 
 /****************************
  Main code
@@ -29,9 +31,6 @@ for (count = 0; count < 5; count++) {
 }
 console.log("Loop stopped!")
 console.log("Your random number is " + randomnum)
-
-
-
 function start() {
     UserName = askUserName();
     UserAge = askUserAge();
