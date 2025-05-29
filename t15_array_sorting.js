@@ -21,6 +21,7 @@ const MAXIMUM_AGE = 130;
 let chocolateArray = ["Mars bar", "Moro bar", "King Size Crunchy", "Dairy Milk Block", "Lindt Block"];
 let chocolatePriceArray = ["$2", "$2.50", "$3", "$6", "$7"]
 let message = ("The different kinds of chocolate bars available are:");
+const MAXIMUM_POCKET_MONEY = 10;
 
 /****************************
  Main code
@@ -113,3 +114,18 @@ function askUserMoney() {
         alert("Congratulations! \nYou have enough pocket money to buy a $5 Lindt block.");
     }
 }
+function askUserPocketMoney() {
+    UserPocketMoney = prompt("How much pocket money do you have?");
+    while (UserPocketMoneyInvalid) {
+        if (UserPocketMoney == null) {
+            break;
+        }
+        else {
+            if (UserPocketMoney == "" || UserPocketMoney == " " || (isNaN(UserPocketMoney)) || UserPocketMoney <= MINIMUM_MONEY || UserPocketMoney >= MAXIMUM_POCKET_MONEY) {
+                UserPocketMoney = prompt("Error! \nInvalid user input. \nPlease enter a valid user pocket money between 1 and 5.");
+            }
+            else {
+                UserPocketMoneyInvalid = false;
+            }
+        }
+    }
