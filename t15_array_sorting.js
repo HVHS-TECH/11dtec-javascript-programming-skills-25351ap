@@ -20,7 +20,7 @@ const MINIMUM_AGE = 0;
 const MAXIMUM_AGE = 130;
 let chocolateArray = ["Mars bar", "Moro bar", "King Size Crunchy", "Dairy Milk Block", "Lindt Block"];
 let chocolatePriceArray = ["$2", "$2.50", "$3", "$6", "$7"]
-let message = 
+let message = ("The different kinds of chocolate bars available are:");
 
 /****************************
  Main code
@@ -35,7 +35,7 @@ console.log("Your random number is " + randomnum)
 alert(askUserName());
 alert(askUserAge());
 for (i = 0; i < chocolateArray.length; i++) {
-
+    message = message + "\nChocolate bar number " + i + " is " + chocolateArray[i];
 }
 function start() {
     UserName = askUserName();
