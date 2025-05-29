@@ -29,6 +29,9 @@ for (count = 0; count < 5; count++) {
 }
 console.log("Loop stopped!")
 console.log("Your random number is " + randomnum)
+
+
+
 function start() {
     UserName = askUserName();
     UserAge = askUserAge();
