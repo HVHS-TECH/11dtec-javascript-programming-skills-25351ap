@@ -35,7 +35,7 @@ console.log("Loop stopped!")
 console.log("Your random number is " + randomnum)
 alert(askUserName());
 alert(askUserAge());
-for (i = 0; i < chocolateArray.length; i++) {
+for (i = 1; i < chocolateArray.length; i++) {
     message = message + "\nChocolate bar number " + i + " is " + chocolateArray[i];
 }
 alert(message);
