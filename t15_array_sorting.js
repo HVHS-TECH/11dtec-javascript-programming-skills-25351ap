@@ -38,6 +38,10 @@ alert(askUserAge());
 for (i = 0; i < chocolateArray.length; i++) {
     message = message + "\nChocolate bar number " + i + " is " + chocolateArray[i];
 }
+alert(message);
+for (i = 0; i < chocolatePriceArray.length; i++) {
+    askUserPocketMoney() = askUserPocketMoney() + "\nChocolate bar number " + i + " is " + chocolateArray[i];
+}
 function start() {
     UserName = askUserName();
     UserAge = askUserAge();
