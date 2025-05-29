@@ -22,6 +22,7 @@ let chocolateArray = ["Mars bar", "Moro bar", "King Size Crunchy", "Dairy Milk B
 let chocolatePriceArray = ["$2", "$2.50", "$3", "$6", "$7"]
 let message = ("The different kinds of chocolate bars available are:");
 const MAXIMUM_POCKET_MONEY = 10;
+let messageTwo = ("Your current pocket money amount is " + UserPocketMoney);
 
 /****************************
  Main code
@@ -39,8 +40,9 @@ for (i = 1; i < chocolateArray.length; i++) {
     message = message + "\nChocolate bar number " + i + " is " + chocolateArray[i];
 }
 alert(message);
-for (i = 0; i < chocolatePriceArray.length; i++) {
-    askUserPocketMoney() = askUserPocketMoney() + "\nChocolate bar number " + i + " is " + chocolateArray[i];
+alert(askUserPocketMoney())
+for (i = 1; i < chocolateArray.length; i++) {
+    messageTwo = messageTwo + "\nThis means the most expensive chocolate bar you can afford is " ;
 }
 function start() {
     UserName = askUserName();
