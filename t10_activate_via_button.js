@@ -8,9 +8,9 @@ console.log("Running t10_activate_via_button.js")
 
 //Variables
 let randomnum = 0;
-let UserName;
-let UserAge;
-let UserPocketMoney;
+let userName;
+let userAge;
+let userPocketMoney;
 
 /****************************
  Main code
@@ -23,9 +23,9 @@ for (count = 0; count < 5; count ++) {
 console.log("Loop stopped!")
 console.log("Your random number is " + randomnum)
 function start() {
-    UserName = askUserName();
-    UserAge = askUserAge();
-    UserPocketMoney = askUserMoney();
+    userName = askUserName();
+    userAge = askUserAge();
+    userPocketMoney = askUserMoney();
 }
 
 
@@ -33,18 +33,18 @@ function start() {
  Functions
  ****************************/
 function askUserName() {
-    UserName = prompt("What is your name?");
-    alert("Welcome to my program " + UserName + "!");
+    userName = prompt("What is your name?");
+    alert("Welcome to my program " + userName + "!");
 }
 function askUserAge() {
-    UserAge = prompt("How old are you?");
-    alert("You are " + UserAge + " years old.");
+    userAge = prompt("How old are you?");
+    alert("You are " + userAge + " years old.");
 }
 function askUserMoney() {
-    UserPocketMoney = prompt("How much pocket money do you have?");
-    if (UserPocketMoney > 4){
-    alert("You have " + UserPocketMoney + " dollars. That is enough to purchase a 4 dollar chocolate bar. YAY!");
+    userPocketMoney = prompt("How much pocket money do you have?");
+    if (userPocketMoney > 4){
+    alert("You have " + userPocketMoney + " dollars. That is enough to purchase a 4 dollar chocolate bar. YAY!");
   } else {
-    alert("You have " + UserPocketMoney + " dollars. That is not enough to purchase a 4 dollar chocolate bar. :(");
+    alert("You have " + userPocketMoney + " dollars. That is not enough to purchase a 4 dollar chocolate bar. :(");
   }
 }

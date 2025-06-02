@@ -8,12 +8,12 @@ console.log("Running t13_validation.js")
 
 //Variables
 let randomnum = 0;
-let UserName;
-let UserAge;
-let UserPocketMoney;
-let UserNameInvalid = true;
-let UserAgeInvalid = true;
-let UserPocketMoneyInvalid = true;
+let userName;
+let userAge;
+let userPocketMoney;
+let userNameInvalid = true;
+let userAgeInvalid = true;
+let userPocketMoneyInvalid = true;
 
 /****************************
  Main code
@@ -26,9 +26,9 @@ for (count = 0; count < 5; count ++) {
 console.log("Loop stopped!")
 console.log("Your random number is " + randomnum)
 function start() {
-    UserName = askUserName();
-    UserAge = askUserAge();
-    UserPocketMoney = askUserMoney();
+    userName = askUserName();
+    userAge = askUserAge();
+    userPocketMoney = askUserMoney();
 }
 
 
@@ -36,67 +36,67 @@ function start() {
  Functions
  ****************************/
 function askUserName() {
-    UserName = prompt("Please enter your name.");
-    while (UserNameInvalid) {
-        if (UserName == null) {
+    userName = prompt("Please enter your name.");
+    while (userNameInvalid) {
+        if (userName == null) {
             break;
         }
         else {
-            if (UserName == "" || UserName == " " || (!isNaN(UserName))) {
-                UserName = prompt("Error! \nInvalid user input. \nPlease enter a valid user name.");
+            if (userName == "" || userName == " " || (!isNaN(userName))) {
+                userName = prompt("Error! \nInvalid user input. \nPlease enter a valid user name.");
             }
             else {
-                UserNameInvalid = false;
+                userNameInvalid = false;
             }
         }
     }
-    alert("Hello " + UserName + ".");
+    alert("Hello " + userName + ".");
 }
 function askUserAge() {
-    UserAge = prompt("Please enter your age.");
-    while (UserAgeInvalid) {
-        if (UserAge == null) {
+    userAge = prompt("Please enter your age.");
+    while (userAgeInvalid) {
+        if (userAge == null) {
             break;
         }
         else {
-            if (UserAge == "" || UserAge == " " || (isNaN(UserAge)) || UserAge <= 0 || UserAge >= 130) {
-                UserAge = prompt("Error! \nInvalid user input. \nPlease enter a valid user age between 0 and 130.");
+            if (userAge == "" || userAge == " " || (isNaN(userAge)) || userAge <= 0 || userAge >= 130) {
+                userAge = prompt("Error! \nInvalid user input. \nPlease enter a valid user age between 0 and 130.");
             }
             else {
-                UserAgeInvalid = false;
+                userAgeInvalid = false;
             }
         }
     }
-    alert("You are " + UserAge + " years old.");
+    alert("You are " + userAge + " years old.");
 }
 function askUserMoney() {
-    UserPocketMoney = prompt("How much pocket money do you have?");
-    while (UserPocketMoneyInvalid) {
-        if (UserPocketMoney == null) {
+    userPocketMoney = prompt("How much pocket money do you have?");
+    while (userPocketMoneyInvalid) {
+        if (userPocketMoney == null) {
             break;
         }
         else {
-            if (UserPocketMoney == "" || UserPocketMoney == " " || (isNaN(UserPocketMoney)) || UserPocketMoney <= 0 || UserPocketMoney >= 6) {
-                UserPocketMoney = prompt("Error! \nInvalid user input. \nPlease enter a valid user pocket money between 1 and 5.");
+            if (userPocketMoney == "" || userPocketMoney == " " || (isNaN(userPocketMoney)) || userPocketMoney <= 0 || userPocketMoney >= 6) {
+                userPocketMoney = prompt("Error! \nInvalid user input. \nPlease enter a valid user pocket money between 1 and 5.");
             }
             else {
-                UserPocketMoneyInvalid = false;
+                userPocketMoneyInvalid = false;
             }
         }
     }
-  if (UserPocketMoney == 1) {
+  if (userPocketMoney == 1) {
         alert("Congratulations! \nYou have enough pocket money to buy a $1 mars bar.");
     }
-    else if (UserPocketMoney == 2) {
+    else if (userPocketMoney == 2) {
         alert("Congratulations! \nYou have enough pocket money to buy a $2 moro bar.");
     }
-    else if (UserPocketMoney == 3) {
+    else if (userPocketMoney == 3) {
         alert("Congratulations! \nYou have enough pocket money to buy a $3 King sized chrunchy.");
     }
-    else if (UserPocketMoney == 4) {
+    else if (userPocketMoney == 4) {
         alert("Congratulations! \nYou have enough pocket money to buy a $4 Dairy milk block.");
     }
-    else if (UserPocketMoney == 5) {
+    else if (userPocketMoney == 5) {
         alert("Congratulations! \nYou have enough pocket money to buy a $5 Lindt block.");
     }
 }
