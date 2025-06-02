@@ -19,6 +19,7 @@ const MAXIMUM_MONEY = 5;
 const MINIMUM_AGE = 0;
 const MAXIMUM_AGE = 130;
 const MAXIMUM_POCKET_MONEY = 10;
+const MINIMUM_POCKET_MONEY = 0;
 let chocolateArray = ["Mars bar", "Moro bar", "King Size Crunchy", "Dairy Milk Block", "Lindt Block"];
 let chocolatePriceArray = ["2", "2.50", "3", "6", "7"]
 let message = ("The different kinds of chocolate bars available are:");
@@ -40,8 +41,38 @@ for (i = 1; i < chocolateArray.length; i++) {
 }
 alert(message);
 alert(askUserPocketMoney())
-if (UserPocketMoney <= chocolatePriceArray[0]) {
-    alert("Your current pocket money amount is " + UserPocketMoney + " \n")
+if (UserPocketMoney < chocolatePriceArray[0]) {
+    alert("Your current pocket money amount is $" + UserPocketMoney + " \nThis means you can not afford a chocolate bar.")
+}
+else if (UserPocketMoney == chocolatePriceArray[0]) {
+    alert("Your current pocket money amount is $" + UserPocketMoney + " \nThis means the most expensive chocolate bar you can a afford is a $2 Mars bar.")
+}
+else if (UserPocketMoney < chocolatePriceArray[1]) {
+    alert("Your current pocket money amount is $" + UserPocketMoney + " \nThis means the most expensive chocolate bar you can a afford is a $2 Mars bar.")
+}
+else if (UserPocketMoney == chocolatePriceArray[1]) {
+    alert("Your current pocket money amount is $" + UserPocketMoney + " \nThis means the most expensive chocolate bar you can a afford is a $2.50 Moro bar.")
+}
+else if (UserPocketMoney < chocolatePriceArray[2]) {
+    alert("Your current pocket money amount is $" + UserPocketMoney + " \nThis means the most expensive chocolate bar you can a afford is a $2.50 Moro bar.")
+}
+else if (UserPocketMoney == chocolatePriceArray[2]) {
+    alert("Your current pocket money amount is $" + UserPocketMoney + " \nThis means the most expensive chocolate bar you can a afford is a $3 King Size Crunchy.")
+}
+else if (UserPocketMoney < chocolatePriceArray[3]) {
+    alert("Your current pocket money amount is $" + UserPocketMoney + " \nThis means the most expensive chocolate bar you can a afford is a $3 King Size Crunchy.")
+}
+else if (UserPocketMoney == chocolatePriceArray[3]) {
+    alert("Your current pocket money amount is $" + UserPocketMoney + " \nThis means the most expensive chocolate bar you can a afford is a $6 Dairy Milk Block.")
+}
+else if (UserPocketMoney < chocolatePriceArray[4]) {
+    alert("Your current pocket money amount is $" + UserPocketMoney + " \nThis means the most expensive chocolate bar you can a afford is a $6 Dairy Milk Block.")
+}
+else if (UserPocketMoney == chocolatePriceArray[4]) {
+    alert("Your current pocket money amount is $" + UserPocketMoney + " \nThis means the most expensive chocolate bar you can a afford is a $7 Lindt Block.")
+}
+else if (UserPocketMoney > chocolatePriceArray[4]) {
+    alert("Your current pocket money amount is $" + UserPocketMoney + " \nThis means the most expensive chocolate bar you can a afford is a $7 Lindt Block.")
 }
 function start() {
     UserName = askUserName();
@@ -126,8 +157,8 @@ function askUserPocketMoney() {
             break;
         }
         else {
-            if (UserPocketMoney == "" || UserPocketMoney == " " || (isNaN(UserPocketMoney)) || UserPocketMoney <= MINIMUM_MONEY || UserPocketMoney >= MAXIMUM_POCKET_MONEY) {
-                UserPocketMoney = prompt("Error! \nInvalid user input. \nPlease enter a valid user pocket money between 1 and 5.");
+            if (UserPocketMoney == "" || UserPocketMoney == " " || (isNaN(UserPocketMoney)) || UserPocketMoney <= MINIMUM_POCKET_MONEY || UserPocketMoney >= MAXIMUM_POCKET_MONEY) {
+                UserPocketMoney = prompt("Error! \nInvalid user input. \nPlease enter a valid user pocket money between 0 and 10.");
             }
             else {
                 UserPocketMoneyInvalid = false;
