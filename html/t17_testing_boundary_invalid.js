@@ -1,10 +1,10 @@
 /****************************
- Task 16
+ Task 17
  Alice
- 03-06-2025
- Learing to how to exit the program if the user clicks cancel. 
+ 04-06-2025
+ Learing to use Javascript to change html 
  ****************************/
-console.log("Running t16_cancel_and_exit.js")
+console.log("Running t17_testing_boundary_invalid.js")
 
 //Variables
 let randomnum = 0;
@@ -87,6 +87,9 @@ function start() {
     if (userPocketMoney == null) {
         return;
     }
+}
+function clicks() {
+    testing.innerHTML="Button pressed";
 }
 
 
