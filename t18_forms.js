@@ -181,7 +181,7 @@ function askUserPocketMoney() {
     }
 }
 function formnameinput() {
-    while (userNameInvalid) {
+    while (input_name.value == true) {
          if (input_name.value == null) {
         return;
     }
@@ -190,7 +190,7 @@ function formnameinput() {
                 input_name.value = error.innerHTML="Error! \nInvalid user input. \nPlease enter a valid user name.";
             }
             else {
-                userNameInvalid = false;
+                input_name.value = false;
             }
         }
     }
