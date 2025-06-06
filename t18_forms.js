@@ -93,7 +93,7 @@ function clicks() {
     testing.innerHTML="Congrats! \nYou pressed the button.";
 }
 function formnameinput() {
-    names.innerHTML="Hello " + userName + ".";
+    names.innerHTML="Hello " + input_name.value + ".";
 }
 
 
