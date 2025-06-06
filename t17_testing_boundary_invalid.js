@@ -23,11 +23,7 @@ const MINIMUM_POCKET_MONEY = 0;
 let chocolateArray = ["Mars bar", "Moro bar", "King Size Crunchy", "Dairy Milk Block", "Lindt Block"];
 let chocolatePriceArray = ["2", "2.50", "3", "6", "7"]
 let message = ("The different kinds of chocolate bars available are:");
-/*
-let testing = {
-    innerHTML: "Press the button."
-}
-*/
+
 /****************************
  Main code
  ****************************/
