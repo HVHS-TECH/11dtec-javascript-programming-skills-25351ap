@@ -186,3 +186,6 @@ function formnameinput() {
 function formageinput() {
         ages.innerHTML="You are " + input_age.value + " years old.";
     }
+function formpocketmoneyinput() {
+    pocketmoney.innerHTML="Your current pocket money balance is " + input_pocket_money.value + ".";
+}
