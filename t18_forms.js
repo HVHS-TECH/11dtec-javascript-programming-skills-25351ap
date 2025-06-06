@@ -187,7 +187,7 @@ function formnameinput() {
     }
         else {
             if (input_name.value == "" || input_name.value == " " || (!isNaN(input_name.value))) {
-                input_name.value = prompt("Error! \nInvalid user input. \nPlease enter a valid user name.");
+                input_name.value = error.innerHTML="Error! \nInvalid user input. \nPlease enter a valid user name.";
             }
             else {
                 userNameInvalid = false;
