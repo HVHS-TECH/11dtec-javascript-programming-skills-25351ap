@@ -89,7 +89,7 @@ function start() {
     }
 }
 function clicks() {
-    console.log("What")
+    console.log("Button clicked.")
     testing.innerHTML="Congrats! \nYou pressed the button.";
 }
 
