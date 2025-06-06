@@ -190,5 +190,5 @@ function formpocketmoneyinput() {
     pocketmoney.innerHTML="Your current pocket money balance is " + input_pocket_money.value + ".";
 }
 function formpocketmoneyaffordinput() {
-    af
+    afford.innerHTML=
 }
