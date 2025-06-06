@@ -35,7 +35,7 @@ for (count = 0; count < 5; count++) {
 console.log("Loop stopped!")
 console.log("Your random number is " + randomnum)
 formnameinput();
-formageinput()
+formageinput();
 for (i = 0; i < chocolateArray.length; i++) {
     message = message + "\nChocolate bar number " + i + " is " + chocolateArray[i];
 }
