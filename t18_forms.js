@@ -181,13 +181,8 @@ function askUserPocketMoney() {
     }
 }
 function formnameinput() {
-    while (input_name.value == true) {
-            if (input_name.value == "" || input_name.value == " " || (!isNaN(input_name.value)) || input_name.value == null) {
-                input_name.value = error.innerHTML="Error! \nInvalid user input. \nPlease enter a valid user name.";
-            }
-            else {
-                input_name.value = false;
-            }
-        }
+        names.innerHTML="Hello " + input_name.value + ".";
+    }
+function formageinput() {
         names.innerHTML="Hello " + input_name.value + ".";
     }
