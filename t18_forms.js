@@ -92,6 +92,9 @@ function clicks() {
     console.log("What")
     testing.innerHTML="Congrats! \nYou pressed the button.";
 }
+function formnameinput() {
+    names.innerHTML="Hello " + userName + ".";
+}
 
 
 /****************************
