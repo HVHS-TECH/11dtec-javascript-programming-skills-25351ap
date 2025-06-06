@@ -34,7 +34,7 @@ for (count = 0; count < 5; count++) {
 }
 console.log("Loop stopped!")
 console.log("Your random number is " + randomnum)
-askUserName()
+formnameinput();
 userAge = askUserAge();
 for (i = 0; i < chocolateArray.length; i++) {
     message = message + "\nChocolate bar number " + i + " is " + chocolateArray[i];
@@ -92,9 +92,7 @@ function clicks() {
     console.log("What")
     testing.innerHTML="Congrats! \nYou pressed the button.";
 }
-function formnameinput() {
-    names.innerHTML="Hello " + input_name.value + ".";
-}
+
 
 
 /****************************
@@ -181,4 +179,7 @@ function askUserPocketMoney() {
             }
         }
     }
+}
+function formnameinput() {
+    names.innerHTML="Hello " + input_name.value + ".";
 }
