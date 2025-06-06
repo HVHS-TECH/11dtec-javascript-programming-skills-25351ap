@@ -40,39 +40,39 @@ for (i = 0; i < chocolateArray.length; i++) {
     message = message + "\nChocolate bar number " + i + " is " + chocolateArray[i];
 }
 chocolatebars.innerHTML=message + "\nChocolate bar number " + i + " is " + chocolateArray[i];
-askUserPocketMoney()
-if (userPocketMoney < chocolatePriceArray[0]) {
-    afford.innerHTML="Your current pocket money amount is $" + userPocketMoney + " \nThis means you can not afford a chocolate bar.";
+formpocketmoneyinput()
+if (input_pocket_money.value < chocolatePriceArray[0]) {
+    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means you can not afford a chocolate bar.";
 }
-else if (userPocketMoney == chocolatePriceArray[0]) {
-    afford.innerHTML="Your current pocket money amount is $" + userPocketMoney + " \nThis means the most expensive chocolate bar you can a afford is a $2 Mars bar.";
+else if (input_pocket_money.value == chocolatePriceArray[0]) {
+    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $2 Mars bar.";
 }
-else if (userPocketMoney < chocolatePriceArray[1]) {
-    afford.innerHTML="Your current pocket money amount is $" + userPocketMoney + " \nThis means the most expensive chocolate bar you can a afford is a $2 Mars bar.";
+else if (input_pocket_money.value < chocolatePriceArray[1]) {
+    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $2 Mars bar.";
 }
-else if (userPocketMoney == chocolatePriceArray[1]) {
-    afford.innerHTML="Your current pocket money amount is $" + userPocketMoney + " \nThis means the most expensive chocolate bar you can a afford is a $2.50 Moro bar.";
+else if (input_pocket_money.value == chocolatePriceArray[1]) {
+    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $2.50 Moro bar.";
 }
-else if (userPocketMoney < chocolatePriceArray[2]) {
-    afford.innerHTML="Your current pocket money amount is $" + userPocketMoney + " \nThis means the most expensive chocolate bar you can a afford is a $2.50 Moro bar.";
+else if (input_pocket_money.value < chocolatePriceArray[2]) {
+    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $2.50 Moro bar.";
 }
-else if (userPocketMoney == chocolatePriceArray[2]) {
-    afford.innerHTML="Your current pocket money amount is $" + userPocketMoney + " \nThis means the most expensive chocolate bar you can a afford is a $3 King Size Crunchy.";
+else if (input_pocket_money.value == chocolatePriceArray[2]) {
+    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $3 King Size Crunchy.";
 }
-else if (userPocketMoney < chocolatePriceArray[3]) {
-    afford.innerHTML="Your current pocket money amount is $" + userPocketMoney + " \nThis means the most expensive chocolate bar you can a afford is a $3 King Size Crunchy.";
+else if (input_pocket_money.value < chocolatePriceArray[3]) {
+    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $3 King Size Crunchy.";
 }
-else if (userPocketMoney == chocolatePriceArray[3]) {
-    afford.innerHTML="Your current pocket money amount is $" + userPocketMoney + " \nThis means the most expensive chocolate bar you can a afford is a $6 Dairy Milk Block.";
+else if (input_pocket_money.value == chocolatePriceArray[3]) {
+    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $6 Dairy Milk Block.";
 }
-else if (userPocketMoney < chocolatePriceArray[4]) {
-    afford.innerHTML="Your current pocket money amount is $" + userPocketMoney + " \nThis means the most expensive chocolate bar you can a afford is a $6 Dairy Milk Block.";
+else if (input_pocket_money.value < chocolatePriceArray[4]) {
+    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $6 Dairy Milk Block.";
 }
-else if (userPocketMoney == chocolatePriceArray[4]) {
-    afford.innerHTML="Your current pocket money amount is $" + userPocketMoney + " \nThis means the most expensive chocolate bar you can a afford is a $7 Lindt Block.";
+else if (input_pocket_money.value == chocolatePriceArray[4]) {
+    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $7 Lindt Block.";
 }
-else if (userPocketMoney > chocolatePriceArray[4]) {
-    afford.innerHTML="Your current pocket money amount is $" + userPocketMoney + " \nThis means the most expensive chocolate bar you can a afford is a $7 Lindt Block.";
+else if (input_pocket_money.value > chocolatePriceArray[4]) {
+    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $7 Lindt Block.";
 }
 function start() {
     userName = askUserName();
