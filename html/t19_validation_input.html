@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>t18</title>
+  <title>t19</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
@@ -16,29 +16,49 @@
   <h1 id="testing">Press the button.</h1>
   <p id="error">Nothing to see here. Test your code from task 16.</p>
   <form onsubmit="return false;" id="randomnumber">
-    <label>Enter a random number:</label><br>
-    <input type="text" id="input_num"><br>
+    <label>Enter a random number:</label>
+    <br>
+    <input type="text" id="input_num">
+    <br>
     <input type="submit" onclick="formnuminput()" id="input_num_click">
+    <br>
+    <br>
   </form>
   <form onsubmit="return false;">
-    <label>Enter your name:</label><br>
-    <input type="text" id="input_name"><br>
+    <label>Enter your name:</label>
+    <br>
+    <input type="text" id="input_name">
+    <br>
     <input type="submit" onclick="formnameinput()" id="input_name_click">
+    <br>
+    <br>
   </form>
-  <form onsubmit="return false;">
-    <label>Enter your age:</label><br>
-    <input type="text" id="input_age"><br>
+  <form id="input_age_form" onsubmit="return false;">
+    <label>Enter your age:</label>
+    <br>
+    <input type="number" id="input_age" min="0" max="130">
+    <br>
     <input type="submit" onclick="formageinput()" id="input_age_click">
+    <br>
+    <br>
   </form>
   <form onsubmit="return false;">
-    <label>Enter your pocket money balance:</label><br>
-    <input type="text" id="input_pocket_money"><br>
+    <label>Enter your pocket money balance:</label>
+    <br>
+    <input type="text" id="input_pocket_money">
+    <br>
     <input type="submit" onclick="formpocketmoneyinput()" id="input_money_click">
+    <br>
+    <br>
   </form>
   <form onsubmit="return false;">
-    <label>Enter a pocket money balance between 0 and 10:</label><br>
-    <input type="text" id="input_pocket_money_afford"><br>
+    <label>Enter a pocket money balance between 0 and 10:</label>
+    <br>
+    <input type="text" id="input_pocket_money_afford">
+    <br>
     <input type="submit" onclick="formpocketmoneyaffordinput()" id="input_afford_click">
+    <br>
+    <br>
   </form>
   <p id="random">Hi</p>
   <p id="names">Hello</p>
@@ -48,9 +68,9 @@
   <p id="afford">Blah</p>
   <button onclick="clicks() ">Click Me</button>
   <button onclick="start() ">START</button>
-  <script src="../t18_forms.js"></script>
+  <script src="../t19_validation_input.js"></script>
 </body>
 </html>
 <!--*************************************************************
-  END OF T18_FORMS.HTML
+  END OF T19_VALIDATION_INPUT.HTML
 **************************************************************-->

@@ -1,10 +1,10 @@
 /****************************
- Task 18
+ Task 19
  Alice
- 06-06-2025
- Learing to use Javascript to change html 
+ 10-06-2025
+ Learing to use html forms to validate input. 
  ****************************/
-console.log("Running t18_forms.js")
+console.log("Running t19_validation_input.js")
 
 //Variables
 let randomnum = 0;
@@ -224,10 +224,18 @@ else if (input_pocket_money.value > chocolatePriceArray[4]) {
     afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $7 Lindt Block.";
 }
 }
-function formnuminput () {
+function formnuminput() {
 for (count = 0; count < 5; count++) {
     let currentnum = input_num.value;
     randomnum = randomnum + (Number(currentnum));
 }
 random.innerHTML="Your random number is " + randomnum;
+}
+function getageforminput() {
+    if (input_age_form.checkValidity()) {
+        formageinput()
+    }
+    else {
+        getageforminput()
+    }
 }
