@@ -39,40 +39,40 @@ formageinput();
 for (i = 0; i < chocolateArray.length; i++) {
     message = message + "\nChocolate bar number " + i + " is " + chocolateArray[i];
 }
-chocolatebars.innerHTML=message + "\nChocolate bar number " + i + " is " + chocolateArray[i];
+chocolatebars.innerHTML = message + "\nChocolate bar number " + i + " is " + chocolateArray[i];
 formpocketmoneyinput()
 if (input_pocket_money.value < chocolatePriceArray[0]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means you can not afford a chocolate bar.";
+    afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means you can not afford a chocolate bar.";
 }
 else if (input_pocket_money.value == chocolatePriceArray[0]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $2 Mars bar.";
+    afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $2 Mars bar.";
 }
 else if (input_pocket_money.value < chocolatePriceArray[1]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $2 Mars bar.";
+    afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $2 Mars bar.";
 }
 else if (input_pocket_money.value == chocolatePriceArray[1]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $2.50 Moro bar.";
+    afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $2.50 Moro bar.";
 }
 else if (input_pocket_money.value < chocolatePriceArray[2]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $2.50 Moro bar.";
+    afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $2.50 Moro bar.";
 }
 else if (input_pocket_money.value == chocolatePriceArray[2]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $3 King Size Crunchy.";
+    afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $3 King Size Crunchy.";
 }
 else if (input_pocket_money.value < chocolatePriceArray[3]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $3 King Size Crunchy.";
+    afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $3 King Size Crunchy.";
 }
 else if (input_pocket_money.value == chocolatePriceArray[3]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $6 Dairy Milk Block.";
+    afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $6 Dairy Milk Block.";
 }
 else if (input_pocket_money.value < chocolatePriceArray[4]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $6 Dairy Milk Block.";
+    afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $6 Dairy Milk Block.";
 }
 else if (input_pocket_money.value == chocolatePriceArray[4]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $7 Lindt Block.";
+    afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $7 Lindt Block.";
 }
 else if (input_pocket_money.value > chocolatePriceArray[4]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $7 Lindt Block.";
+    afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $7 Lindt Block.";
 }
 function start() {
     userName = askUserName();
@@ -90,7 +90,7 @@ function start() {
 }
 function clicks() {
     console.log("Button clicked.")
-    testing.innerHTML="Congrats! \nYou pressed the button.";
+    testing.innerHTML = "Congrats! \nYou pressed the button.";
 }
 
 
@@ -101,9 +101,9 @@ Functions
 function askUserName() {
     userName = prompt("Please enter your name.");
     while (userNameInvalid) {
-         if (userName == null) {
-        return;
-    }
+        if (userName == null) {
+            return;
+        }
         else {
             if (userName == "" || userName == " " || (!isNaN(userName))) {
                 userName = prompt("Error! \nInvalid user input. \nPlease enter a valid user name.");
@@ -113,7 +113,7 @@ function askUserName() {
             }
         }
     }
-    names.innerHTML="Hello " + userName + ".";
+    names.innerHTML = "Hello " + userName + ".";
 }
 function askUserAge() {
     userAge = prompt("Please enter your age.");
@@ -130,7 +130,7 @@ function askUserAge() {
             }
         }
     }
-    ages.innerHTML="You are " + userAge + " years old.";
+    ages.innerHTML = "You are " + userAge + " years old.";
 }
 function askUserMoney() {
     userPocketMoney = prompt("How much pocket money do you have?");
@@ -149,19 +149,19 @@ function askUserMoney() {
     }
 
     if (userPocketMoney == 1) {
-        pocketmoney.innerHTML="Congratulations! \nYou have enough pocket money to buy a $1 mars bar.";
+        pocketmoney.innerHTML = "Congratulations! \nYou have enough pocket money to buy a $1 mars bar.";
     }
     else if (userPocketMoney == 2) {
-        pocketmoney.innerHTML="Congratulations! \nYou have enough pocket money to buy a $2 moro bar.";
+        pocketmoney.innerHTML = "Congratulations! \nYou have enough pocket money to buy a $2 moro bar.";
     }
     else if (userPocketMoney == 3) {
-        pocketmoney.innerHTML="Congratulations! \nYou have enough pocket money to buy a $3 King sized chrunchy.";
+        pocketmoney.innerHTML = "Congratulations! \nYou have enough pocket money to buy a $3 King sized chrunchy.";
     }
     else if (userPocketMoney == 4) {
-        pocketmoney.innerHTML="Congratulations! \nYou have enough pocket money to buy a $4 Dairy milk block.";
+        pocketmoney.innerHTML = "Congratulations! \nYou have enough pocket money to buy a $4 Dairy milk block.";
     }
     else if (userPocketMoney == 5) {
-        pocketmoney.innerHTML="Congratulations! \nYou have enough pocket money to buy a $5 Lindt block.";
+        pocketmoney.innerHTML = "Congratulations! \nYou have enough pocket money to buy a $5 Lindt block.";
     }
 }
 function askUserPocketMoney() {
@@ -181,55 +181,55 @@ function askUserPocketMoney() {
     }
 }
 function formnameinput() {
-        names.innerHTML="Hello " + input_name.value + ".";
-    }
+    names.innerHTML = "Hello " + input_name.value + ".";
+}
 function formageinput() {
-        ages.innerHTML="You are " + input_age.value + " years old.";
-    }
+    ages.innerHTML = "You are " + input_age.value + " years old.";
+}
 function formpocketmoneyinput() {
-    pocketmoney.innerHTML="Your current pocket money balance is " + input_pocket_money.value + ".";
+    pocketmoney.innerHTML = "Your current pocket money balance is " + input_pocket_money.value + ".";
 }
 function formpocketmoneyaffordinput() {
     if (input_pocket_money.value < chocolatePriceArray[0]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means you can not afford a chocolate bar.";
-}
-else if (input_pocket_money.value == chocolatePriceArray[0]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $2 Mars bar.";
-}
-else if (input_pocket_money.value < chocolatePriceArray[1]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $2 Mars bar.";
-}
-else if (input_pocket_money.value == chocolatePriceArray[1]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $2.50 Moro bar.";
-}
-else if (input_pocket_money.value < chocolatePriceArray[2]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $2.50 Moro bar.";
-}
-else if (input_pocket_money.value == chocolatePriceArray[2]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $3 King Size Crunchy.";
-}
-else if (input_pocket_money.value < chocolatePriceArray[3]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $3 King Size Crunchy.";
-}
-else if (input_pocket_money.value == chocolatePriceArray[3]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $6 Dairy Milk Block.";
-}
-else if (input_pocket_money.value < chocolatePriceArray[4]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $6 Dairy Milk Block.";
-}
-else if (input_pocket_money.value == chocolatePriceArray[4]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $7 Lindt Block.";
-}
-else if (input_pocket_money.value > chocolatePriceArray[4]) {
-    afford.innerHTML="Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $7 Lindt Block.";
-}
+        afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means you can not afford a chocolate bar.";
+    }
+    else if (input_pocket_money.value == chocolatePriceArray[0]) {
+        afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $2 Mars bar.";
+    }
+    else if (input_pocket_money.value < chocolatePriceArray[1]) {
+        afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $2 Mars bar.";
+    }
+    else if (input_pocket_money.value == chocolatePriceArray[1]) {
+        afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $2.50 Moro bar.";
+    }
+    else if (input_pocket_money.value < chocolatePriceArray[2]) {
+        afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $2.50 Moro bar.";
+    }
+    else if (input_pocket_money.value == chocolatePriceArray[2]) {
+        afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $3 King Size Crunchy.";
+    }
+    else if (input_pocket_money.value < chocolatePriceArray[3]) {
+        afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $3 King Size Crunchy.";
+    }
+    else if (input_pocket_money.value == chocolatePriceArray[3]) {
+        afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $6 Dairy Milk Block.";
+    }
+    else if (input_pocket_money.value < chocolatePriceArray[4]) {
+        afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $6 Dairy Milk Block.";
+    }
+    else if (input_pocket_money.value == chocolatePriceArray[4]) {
+        afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $7 Lindt Block.";
+    }
+    else if (input_pocket_money.value > chocolatePriceArray[4]) {
+        afford.innerHTML = "Your current pocket money amount is $" + input_pocket_money.value + " \nThis means the most expensive chocolate bar you can a afford is a $7 Lindt Block.";
+    }
 }
 function formnuminput() {
-for (count = 0; count < 5; count++) {
-    let currentnum = input_num.value;
-    randomnum = randomnum + (Number(currentnum));
-}
-random.innerHTML="Your random number is " + randomnum;
+    for (count = 0; count < 5; count++) {
+        let currentnum = input_num.value;
+        randomnum = randomnum + (Number(currentnum));
+    }
+    random.innerHTML = "Your random number is " + randomnum;
 }
 function getageforminput() {
     if (input_age_form.checkValidity()) {
